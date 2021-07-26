@@ -351,7 +351,10 @@
 "Assets/Scripts/MuteSound.cs"
 "Assets/Scripts/NewRandomPurpose.cs"
 "Assets/Scripts/NumbDie.cs"
+"Assets/Scripts/SetTime.cs"
 "Assets/Scripts/TargetLive.cs"
+"Assets/Scripts/TimeHolder.cs"
+"Assets/Scripts/Timer.cs"
 -langversion:8.0
 
 /deterministic

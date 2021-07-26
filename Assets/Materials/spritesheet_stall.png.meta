@@ -304,9 +304,9 @@ TextureImporter:
       name: spritesheet_stall_6
       rect:
         serializedVersion: 2
-        x: 516
+        x: 517
         y: 360
-        width: 132
+        width: 130
         height: 224
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -388,9 +388,9 @@ TextureImporter:
       name: spritesheet_stall_10
       rect:
         serializedVersion: 2
-        x: 539
+        x: 540
         y: 135
-        width: 132
+        width: 130
         height: 223
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

@@ -8,9 +8,12 @@ public class NewRandomPurpose : MonoBehaviour
     public Text NewPurpose;
     public int intNewPurpose;
     public bool flag;
+    private int beforeNumb;
+
     void Start()
     {
         intNewPurpose = Random.Range(0, 10);
+        beforeNumb = intNewPurpose;
         NewPurpose.text = intNewPurpose.ToString();
         flag = true;
     }
@@ -21,7 +24,11 @@ public class NewRandomPurpose : MonoBehaviour
         if (flag == false)
         {
             flag = true;
-            intNewPurpose = Random.Range(0, 10);
+            while (intNewPurpose == beforeNumb)
+            {
+                intNewPurpose = Random.Range(0, 10);
+            }
+            beforeNumb = intNewPurpose;
             NewPurpose.text = intNewPurpose.ToString();
         }
     }

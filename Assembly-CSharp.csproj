@@ -59,14 +59,17 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\TimeHolder.cs" />
     <Compile Include="Assets\Scripts\TargetLive.cs" />
     <Compile Include="Assets\Scripts\MuteSound.cs" />
     <Compile Include="Assets\Scripts\ExitGame.cs" />
     <Compile Include="Assets\Scripts\NewRandomPurpose.cs" />
+    <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\DuckMove.cs" />
     <Compile Include="Assets\Scripts\DuckSpawner.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\ArrayNumbs.cs" />
+    <Compile Include="Assets\Scripts\SetTime.cs" />
     <Compile Include="Assets\Scripts\NumbDie.cs" />
   </ItemGroup>
   <ItemGroup>
