@@ -64,7 +64,7 @@ public class DuckSpawner : MonoBehaviour
                 Destroy(newDuck, 25);
                 SpawnerNumbs(ch);
             }
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(4);
         }
     }
 
