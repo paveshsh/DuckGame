@@ -153,19 +153,6 @@ public class DuckSpawner : MonoBehaviour
                 flag--;
                 return x + 1;
             }
-            /*
-            else if (x != 0 && arr[x - 2] == true)
-            {
-                arr[x - 2] = false;
-                flag-=2;
-                return x - 2;
-            }
-            else if (x != 6 && arr[x + 2] == true)
-            {
-                arr[x + 2] = false;
-                flag += 2;
-                return x + 2;
-            }*/
             else
             {
                 return GetNumber();
