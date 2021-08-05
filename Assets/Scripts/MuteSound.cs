@@ -7,7 +7,6 @@ public class MuteSound : MonoBehaviour
 {
     public void Sound()
     {
-        //AudioListener.pause = !AudioListener.pause;
         if (AudioListener.volume == 1f)
         {
             

@@ -18,7 +18,6 @@ public class NewRandomPurpose : MonoBehaviour
         flag = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (flag == false)

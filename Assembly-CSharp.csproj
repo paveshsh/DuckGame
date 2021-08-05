@@ -68,7 +68,6 @@
     <Compile Include="Assets\Scripts\DuckMove.cs" />
     <Compile Include="Assets\Scripts\DuckSpawner.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
-    <Compile Include="Assets\Scripts\ArrayNumbs.cs" />
     <Compile Include="Assets\Scripts\SetTime.cs" />
     <Compile Include="Assets\Scripts\NumbDie.cs" />
   </ItemGroup>

@@ -13,6 +13,8 @@ public class Gun : MonoBehaviour
     public AudioSource _audioSource;
     public Text purpose;
     public GameObject spawner;
+    public GameObject GoodEf;
+    public GameObject BadEf;
 
     void Update()
     {
@@ -36,14 +38,17 @@ public class Gun : MonoBehaviour
                 if (target.duckNumb == purpose.GetComponent<NewRandomPurpose>().intNewPurpose)
                 {
                     score += 1;
+                    GameObject newGoodEffect = Instantiate(GoodEf, new Vector3(0, 0, 0), Quaternion.identity);
+                    Destroy(newGoodEffect, 2);
                     purpose.GetComponent<NewRandomPurpose>().flag = false;
-                    spawner.GetComponent<DuckSpawner>().flag = 10;
-                    for (int i = 0; i < 10; i++)
-                    {
-                        spawner.GetComponent<DuckSpawner>().arr[i] = true;
-                    }
+                    spawner.GetComponent<DuckSpawner>().flag = 0;
                 }
             }
+        }
+        else
+        {
+            GameObject newBadEffect = Instantiate(BadEf, new Vector3(0, 0, 0), Quaternion.identity);
+            Destroy(newBadEffect, 2);
         }
     }
 }

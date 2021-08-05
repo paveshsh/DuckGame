@@ -19,12 +19,18 @@ public class DuckSpawner : MonoBehaviour
     public GameObject Num8;
     public GameObject Num9;
 
+    public NewRandomPurpose NRP;
+
     public bool[] arr;
     public int ch;
     public int flag;
+    public int spawnFlag;
+
+    public int x;
 
     void Start()
     {
+        spawnFlag = 0;
         flag = 10;
         arr = new bool[10];
         for (int i = 0; i < 10; i++)
@@ -33,7 +39,6 @@ public class DuckSpawner : MonoBehaviour
         }
         StartCoroutine(Spawner());
     }
-
 
     IEnumerator Spawner()
     {
@@ -127,12 +132,29 @@ public class DuckSpawner : MonoBehaviour
         if (flag==0)
         {
             flag = 10;
+            spawnFlag = Random.Range(0, 3);
             for (int i = 0; i < 10; i++)
             {
                 arr[i] = true;
             }
         }
-        int x = Random.Range(0, 10);
+        if (spawnFlag == 3 && arr[NRP.GetComponent<NewRandomPurpose>().intNewPurpose] == true)
+        {
+            int y = Random.Range(0, 10);
+            if (y != 9)
+            {
+                x = NRP.GetComponent<NewRandomPurpose>().intNewPurpose;
+            }
+            else
+            {
+                x = Random.Range(0, 10);
+            }
+        }
+        else
+        {
+            x = Random.Range(0, 10);
+        }
+        spawnFlag++;
         if (arr[x] == true)
         {
             arr[x] = false;
