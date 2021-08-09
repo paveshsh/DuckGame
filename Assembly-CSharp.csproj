@@ -70,6 +70,9 @@
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\SetTime.cs" />
     <Compile Include="Assets\Scripts\NumbDie.cs" />
+    <Compile Include="Assets\Scripts\ScoreHolder.cs" />
+    <Compile Include="Assets\Scripts\GoToHome.cs" />
+    <Compile Include="Assets\Scripts\ChangeEndScore.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

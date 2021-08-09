@@ -10,6 +10,7 @@ public class Timer : MonoBehaviour
     public float secTime;
     public float timeLeft;
     public bool startFlag = true;
+    public Gun G;
 
     void Start()
     {
@@ -27,7 +28,9 @@ public class Timer : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(0);
+            ScoreHolder.score1 = G.GetComponent<Gun>().score;
+            ScoreHolder.score2 = G.GetComponent<Gun>().score2;
+            SceneManager.LoadScene(2);
         }
     }
 }

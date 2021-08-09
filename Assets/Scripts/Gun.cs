@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class Gun : MonoBehaviour
 {
     public Camera _cam;
-    private int score = 0;
+    public int score = 0;
+    public int score2 = 0;
     public Text scoreText;
     public AudioClip shootSound;
     public AudioClip duckByeSound;
@@ -27,6 +28,7 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
+        score2++;
         _audioSource.PlayOneShot(shootSound);
         RaycastHit2D hitInfo = Physics2D.Raycast(_cam.transform.position, _cam.transform.forward);
         if (hitInfo.collider != null && hitInfo.collider.TryGetComponent(out TargetLive target))
